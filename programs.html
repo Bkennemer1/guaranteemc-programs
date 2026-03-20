@@ -1,0 +1,1664 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Programs | Guarantee Mortgage Company</title>
+  <meta name="description" content="Explore all loan programs offered by Guarantee Mortgage Company — Non-QM, Jumbo, Conventional, Government, and Second Mortgage options for Texas homebuyers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --maroon: #500000;
+      --maroon-mid: #6B1A1A;
+      --maroon-light: #8B2020;
+      --maroon-pale: #F9F0F0;
+      --maroon-faint: #FDF6F6;
+      --gold: #C9A44A;
+      --gold-light: #E8C87A;
+      --text-dark: #1A1A1A;
+      --text-mid: #444444;
+      --text-light: #777777;
+      --border: #E8E0E0;
+      --border-light: #F0EAEA;
+      --white: #FFFFFF;
+      --bg: #FAFAF8;
+      --card-shadow: 0 2px 16px rgba(80,0,0,0.07);
+      --card-shadow-hover: 0 8px 32px rgba(80,0,0,0.14);
+      --radius: 14px;
+      --radius-sm: 8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text-dark);
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ============================================================
+       HEADER
+    ============================================================ */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+    }
+    .logo-text {
+      font-family: 'DM Serif Display', serif;
+      font-size: 17px;
+      color: var(--maroon);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .logo-sub {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--text-light);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: block;
+    }
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .main-nav a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-mid);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: color 0.15s, background 0.15s;
+    }
+    .main-nav a:hover { color: var(--maroon); background: var(--maroon-faint); }
+    .main-nav a.nav-active { color: var(--maroon); font-weight: 600; }
+    .btn-apply-nav {
+      background: var(--maroon) !important;
+      color: var(--white) !important;
+      border-radius: 7px !important;
+      padding: 8px 18px !important;
+      font-weight: 600 !important;
+      font-size: 14px !important;
+      transition: background 0.15s !important;
+    }
+    .btn-apply-nav:hover { background: var(--maroon-mid) !important; }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .page-hero {
+      background: var(--maroon);
+      padding: 56px 24px 52px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse 60% 100% at 100% 50%, rgba(201,164,74,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 80% at 0% 0%, rgba(255,255,255,0.04) 0%, transparent 60%);
+    }
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .hero-eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+    }
+    .hero-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(38px, 5vw, 58px);
+      color: var(--white);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+    }
+    .hero-subtitle {
+      font-size: 16px;
+      color: rgba(255,255,255,0.72);
+      max-width: 500px;
+      font-weight: 400;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 36px;
+    }
+    .hero-stat-val {
+      font-family: 'DM Serif Display', serif;
+      font-size: 28px;
+      color: var(--white);
+      line-height: 1;
+    }
+    .hero-stat-label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    /* ============================================================
+       STICKY TABS
+    ============================================================ */
+    .tabs-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 68px;
+      z-index: 90;
+    }
+    .tabs-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .tabs-list {
+      display: flex;
+      list-style: none;
+      gap: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .tabs-list::-webkit-scrollbar { display: none; }
+    .tab-link {
+      display: block;
+      padding: 16px 20px 14px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-light);
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .tab-link:hover { color: var(--maroon); }
+    .tab-link.active {
+      color: var(--maroon);
+      border-bottom-color: var(--maroon);
+    }
+    .tab-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background: var(--maroon-pale);
+      color: var(--maroon);
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 20px;
+      margin-left: 6px;
+    }
+
+    /* ============================================================
+       FILTER ROW
+    ============================================================ */
+    .filter-section {
+      background: var(--white);
+      border-bottom: 1px solid var(--border-light);
+      padding: 14px 24px;
+    }
+    .filter-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .select-wrap {
+      position: relative;
+    }
+    .select-wrap select {
+      appearance: none;
+      background: var(--bg);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 36px 8px 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--text-mid);
+      cursor: pointer;
+      min-width: 170px;
+      transition: border-color 0.15s;
+    }
+    .select-wrap select:focus { outline: none; border-color: var(--maroon); }
+    .select-wrap::after {
+      content: '';
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid var(--text-light);
+      pointer-events: none;
+    }
+    .filter-ctas {
+      display: flex;
+      gap: 8px;
+      margin-left: auto;
+    }
+    .btn-outline-sm {
+      padding: 8px 16px;
+      border: 1.5px solid var(--border);
+      background: var(--white);
+      border-radius: var(--radius-sm);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-mid);
+      text-decoration: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .btn-outline-sm:hover { border-color: var(--maroon); color: var(--maroon); background: var(--maroon-faint); }
+    .btn-outline-sm.primary {
+      border-color: var(--maroon);
+      color: var(--maroon);
+    }
+    .btn-outline-sm.filled {
+      background: var(--maroon);
+      color: var(--white);
+      border-color: var(--maroon);
+    }
+    .btn-outline-sm.filled:hover { background: var(--maroon-mid); }
+
+    /* ============================================================
+       MAIN CONTENT
+    ============================================================ */
+    .programs-main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .program-section {
+      margin-bottom: 64px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .section-heading {
+      font-family: 'DM Serif Display', serif;
+      font-size: 30px;
+      color: var(--text-dark);
+      letter-spacing: -0.02em;
+    }
+    .section-desc {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    .section-rule {
+      height: 3px;
+      background: linear-gradient(90deg, var(--maroon) 0%, rgba(80,0,0,0) 100%);
+      border-radius: 2px;
+      width: 100%;
+      margin-bottom: 28px;
+      margin-top: -14px;
+    }
+
+    /* ============================================================
+       PROGRAM GRID & CARDS
+    ============================================================ */
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .program-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 22px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      box-shadow: var(--card-shadow);
+      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .program-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--maroon), var(--maroon-light));
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .program-card:hover {
+      box-shadow: var(--card-shadow-hover);
+      transform: translateY(-2px);
+      border-color: rgba(80,0,0,0.18);
+    }
+    .program-card:hover::after { opacity: 1; }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .card-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--maroon-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .card-icon-wrap svg {
+      width: 26px;
+      height: 26px;
+    }
+    .card-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 17px;
+      color: var(--text-dark);
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+
+    .card-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-mid);
+      background: var(--bg);
+      letter-spacing: 0.01em;
+    }
+
+    .card-tagline {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .card-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+    .card-features li {
+      font-size: 13px;
+      color: var(--text-mid);
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      line-height: 1.45;
+    }
+    .card-features li::before {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 6px solid var(--maroon);
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+
+    .btn-learn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      border: 1.5px solid var(--maroon);
+      border-radius: var(--radius-sm);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--maroon);
+      text-decoration: none;
+      background: var(--white);
+      align-self: flex-start;
+      transition: background 0.15s, color 0.15s;
+    }
+    .btn-learn:hover { background: var(--maroon); color: var(--white); }
+    .btn-learn svg { transition: transform 0.15s; }
+    .btn-learn:hover svg { transform: translateX(2px); }
+
+    /* ============================================================
+       WHY SECTION
+    ============================================================ */
+    .why-section {
+      background: var(--maroon);
+      border-radius: 20px;
+      padding: 56px 48px;
+      margin: 0 0 64px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .why-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 50% 80% at 100% 50%, rgba(201,164,74,0.1) 0%, transparent 70%);
+    }
+    .why-left { position: relative; }
+    .why-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+    }
+    .why-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 34px;
+      color: var(--white);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .why-body {
+      font-size: 14.5px;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.65;
+    }
+    .why-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      position: relative;
+    }
+    .why-stat {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .why-stat-val {
+      font-family: 'DM Serif Display', serif;
+      font-size: 28px;
+      color: var(--white);
+      letter-spacing: -0.02em;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .why-stat-label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      font-weight: 500;
+    }
+
+    /* ============================================================
+       PROCESS STEPS
+    ============================================================ */
+    .process-section {
+      margin: 0 0 64px;
+      text-align: center;
+    }
+    .process-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 28px;
+      color: var(--text-dark);
+      margin-bottom: 36px;
+    }
+    .process-steps {
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: 80px;
+      right: 80px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), var(--border), transparent);
+    }
+    .process-step {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 0 16px;
+    }
+    .step-num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--maroon);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      color: var(--maroon);
+      position: relative;
+      z-index: 1;
+    }
+    .step-label {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-dark);
+      text-align: center;
+    }
+    .step-sub {
+      font-size: 12px;
+      color: var(--text-light);
+      text-align: center;
+    }
+
+    /* ============================================================
+       CTA BAND
+    ============================================================ */
+    .cta-band {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    .cta-band-text h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 24px;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+    .cta-band-text p {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    .cta-band-btns {
+      display: flex;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .btn-primary {
+      background: var(--maroon);
+      color: var(--white);
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: var(--maroon-mid); }
+    .btn-secondary {
+      background: var(--white);
+      color: var(--maroon);
+      padding: 12px 24px;
+      border-radius: var(--radius-sm);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1.5px solid var(--maroon);
+      transition: background 0.15s;
+    }
+    .btn-secondary:hover { background: var(--maroon-faint); }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .site-footer {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-legal {
+      font-size: 11.5px;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+    .footer-links a {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-light);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .footer-links a:hover { color: var(--maroon); }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1024px) {
+      .program-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-section { grid-template-columns: 1fr; padding: 40px 32px; }
+      .why-right { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .main-nav { display: none; }
+      .program-grid { grid-template-columns: 1fr; }
+      .filter-inner { flex-direction: column; align-items: flex-start; }
+      .filter-ctas { margin-left: 0; flex-wrap: wrap; }
+      .process-steps { flex-direction: column; align-items: center; }
+      .process-steps::before { display: none; }
+      .cta-band { flex-direction: column; text-align: center; }
+      .cta-band-btns { width: 100%; justify-content: center; }
+      .hero-stats { gap: 24px; flex-wrap: wrap; }
+      .tabs-inner { overflow-x: auto; }
+    }
+
+    /* ============================================================
+       ANIMATIONS
+    ============================================================ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .program-card {
+      animation: fadeUp 0.4s ease both;
+    }
+    .program-grid .program-card:nth-child(1) { animation-delay: 0.05s; }
+    .program-grid .program-card:nth-child(2) { animation-delay: 0.1s; }
+    .program-grid .program-card:nth-child(3) { animation-delay: 0.15s; }
+    .program-grid .program-card:nth-child(4) { animation-delay: 0.2s; }
+    .program-grid .program-card:nth-child(5) { animation-delay: 0.25s; }
+    .program-grid .program-card:nth-child(6) { animation-delay: 0.3s; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="https://guaranteemc.com" class="logo-link">
+        <svg class="logo-mark" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="8" fill="#500000"/>
+          <path d="M18 8L26 12V20C26 24.4 22.4 28.4 18 29C13.6 28.4 10 24.4 10 20V12L18 8Z" fill="none" stroke="white" stroke-width="1.5"/>
+          <path d="M15 18l2 2 4-4" stroke="#C9A44A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <span class="logo-text">Guarantee Mortgage</span>
+          <span class="logo-sub">NMLS #279696</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="https://guaranteemc.com/buy/">Buy</a>
+        <a href="https://guaranteemc.com/refinance/">Refinance</a>
+        <a href="https://guaranteemc.com/todays-rates/">Today's Rates</a>
+        <a href="#" class="nav-active">Loan Programs</a>
+        <a href="https://guaranteemc.com/apply-now/" class="btn-apply-nav">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">College Station &amp; Beyond</p>
+      <h1 class="hero-title">Loan Programs</h1>
+      <p class="hero-subtitle">We shop 25+ lenders to find the right program for every borrower — conventional, Non-QM, government, and more.</p>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-val">25+</div>
+          <div class="hero-stat-label">Lender partners</div>
+        </div>
+        <div>
+          <div class="hero-stat-val">24</div>
+          <div class="hero-stat-label">Loan programs</div>
+        </div>
+        <div>
+          <div class="hero-stat-val">5</div>
+          <div class="hero-stat-label">Categories</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY TABS -->
+  <div class="tabs-bar">
+    <div class="tabs-inner">
+      <ul class="tabs-list" id="categoryTabs">
+        <li><a href="#non-qm" class="tab-link active" data-category="non-qm">Non-QM <span class="tab-count">10</span></a></li>
+        <li><a href="#jumbo" class="tab-link" data-category="jumbo">Jumbo <span class="tab-count">1</span></a></li>
+        <li><a href="#conventional" class="tab-link" data-category="conventional">Conventional <span class="tab-count">7</span></a></li>
+        <li><a href="#government" class="tab-link" data-category="government">Government <span class="tab-count">5</span></a></li>
+        <li><a href="#second-mortgage" class="tab-link" data-category="second-mortgage">Second Mortgage <span class="tab-count">1</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FILTER ROW -->
+  <div class="filter-section">
+    <div class="filter-inner">
+      <div class="select-wrap">
+        <select id="borrowerFilter" aria-label="Borrower type">
+          <option value="all">Borrower type</option>
+          <option>Employed</option>
+          <option>Self-employed</option>
+          <option>Investors</option>
+          <option>Foreign Nationals</option>
+          <option>High Net Worth</option>
+          <option>Veterans</option>
+          <option>First-time buyers</option>
+        </select>
+      </div>
+      <div class="select-wrap">
+        <select id="incomeFilter" aria-label="Income type">
+          <option value="all">Income type</option>
+          <option>2Y Full Doc</option>
+          <option>1Y Full Doc</option>
+          <option>24 Month Bank Statement</option>
+          <option>12 Month Bank Statement</option>
+          <option>P&amp;L Only</option>
+          <option>Asset Utilization</option>
+          <option>WVOE</option>
+          <option>1099</option>
+          <option>DSCR</option>
+          <option>Foreign Income</option>
+        </select>
+      </div>
+      <div class="filter-ctas">
+        <a href="mailto:info@guaranteemc.com" class="btn-outline-sm">Submit a Scenario</a>
+        <a href="tel:9799773900" class="btn-outline-sm primary">Call (979) 977-3900</a>
+        <a href="https://guaranteemc.com/apply-now/" class="btn-outline-sm filled">Apply Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="programs-main">
+
+    <!-- ==================== NON-QM ==================== -->
+    <section id="non-qm" class="program-section">
+      <div class="section-header">
+        <h2 class="section-heading">Non-QM</h2>
+        <span class="section-desc">10 programs — alternative income documentation, investors, foreign nationals</span>
+      </div>
+      <div class="section-rule"></div>
+      <div class="program-grid">
+
+        <!-- DSCR -->
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 22l5-9 5 4 5-7 5 12H3z" fill="#500000" opacity="0.15"/>
+                <path d="M3 22l5-9 5 4 5-7 5 12" stroke="#500000" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">DSCR</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">Min. FICO 620</span>
+            <span class="badge">Up to 80% CLTV</span>
+          </div>
+          <p class="card-tagline">Close DSCR loans with fast turn times</p>
+          <ul class="card-features">
+            <li>Credit for DSCR &gt;1.25</li>
+            <li>No income, no employment required</li>
+            <li>Short-term rentals up to 80% CLTV</li>
+            <li>DSCR as low as 0</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- 12/24 Bank Statement -->
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="3" width="14" height="20" rx="2" fill="#500000" opacity="0.12"/>
+                <rect x="7" y="7" width="8" height="1.5" rx=".75" fill="#500000"/>
+                <rect x="7" y="11" width="6" height="1.5" rx=".75" fill="#500000" opacity="0.6"/>
+                <rect x="7" y="15" width="7" height="1.5" rx=".75" fill="#500000" opacity="0.4"/>
+                <circle cx="19" cy="19" r="5" fill="#500000" opacity="0.8"/>
+                <path d="M17 19l1.5 1.5L21 18" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">12/24 Month Bank Statement</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">No Score or FICO 620</span>
+            <span class="badge">Up to 90% CLTV</span>
+          </div>
+          <p class="card-tagline">A perfect fit for self-employed borrowers</p>
+          <ul class="card-features">
+            <li>Personal, business, or combined bank statements</li>
+            <li>Min. 3 months of reserves</li>
+            <li>Concierge service for income calculation</li>
+            <li>Min. FICO 620 or no score</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- ITIN -->
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="9" r="5" fill="#500000" opacity="0.15"/>
+                <circle cx="13" cy="9" r="5" stroke="#500000" stroke-width="1.5"/>
+                <path d="M5 22c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#500000" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">ITIN</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">Min. FICO 660</span>
+            <span class="badge">Up to 70% CLTV</span>
+          </div>
+          <p class="card-tagline">Expand your portfolio for borrowers without an SSN</p>
+          <ul class="card-features">
+            <li>Min FICO 660, up to 70% CLTV for Super Prime</li>
+            <li>Min FICO 700, up to 70% CLTV for DSCR</li>
+            <li>Loan amounts up to $1.5 million</li>
+            <li>Max cash-in-hand $500K for CLTV &gt;65%</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- P&L -->
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="20" height="20" rx="3" fill="#500000" opacity="0.08"/>
+                <path d="M7 13h12M7 9h12M7 17h8" stroke="#500000" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M18 17l2.5 2.5" stroke="#500000" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">1Y + 2Y P&amp;L</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">Min. FICO 660</span>
+            <span class="badge">Up to 80% CLTV</span>
+          </div>
+          <p class="card-tagline">The easiest alt solution for self-employed borrowers</p>
+          <ul class="card-features">
+            <li>P&amp;L reviewed by Licensed CPA or IRS Enrolled Agent</li>
+            <li>Bank statements not required up to 70% LTV</li>
+            <li>Loan amounts up to $2.5 million</li>
+            <li>Min FICO 660</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- Full Doc Non-QM -->
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="3" width="18" height="22" rx="2" fill="#500000" opacity="0.1"/>
+                <path d="M8 9h10M8 13h7M8 17h9" stroke="#500000" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">1Y or 2Y Full Doc Non-QM</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">No Score or FICO 620</span>
+            <span class="badge">Up to 90% CLTV</span>
+          </div>
+          <p class="card-tagline">A flexible Non-QM solution for Full Doc borrowers</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $4 million</li>
+            <li>DTI up to 55% on owner-occupied</li>
+            <li>Min. 3 months of reserves</li>
+            <li>Min. FICO 620 or no score</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- 1099 -->
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="5" width="20" height="16" rx="2" fill="#500000" opacity="0.1"/>
+                <rect x="3" y="5" width="20" height="5" rx="2" fill="#500000" opacity="0.2"/>
+                <text x="13" y="19" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="6" font-weight="700" fill="#500000">1099</text>
+              </svg>
+            </div>
+            <h3 class="card-title">1099</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">No Score or FICO 620</span>
+            <span class="badge">Up to 85% CLTV</span>
+          </div>
+          <p class="card-tagline">Ideal for sole proprietors or contract individuals</p>
+          <ul class="card-features">
+            <li>1099s for the last 1 year</li>
+            <li>1-year history with the same employer</li>
+            <li>Gift funds allowed</li>
+            <li>Loan amounts up to $4 million</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- WVOE -->
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 22V14l9-9 9 9v8H4z" fill="#500000" opacity="0.1"/>
+                <path d="M4 22V14l9-9 9 9v8" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <rect x="10" y="16" width="6" height="6" rx="1" fill="#500000" opacity="0.5"/>
+              </svg>
+            </div>
+            <h3 class="card-title">WVOE</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">No Score or FICO 620</span>
+            <span class="badge">Up to 80% CLTV</span>
+          </div>
+          <p class="card-tagline">For salaried borrowers with no tax returns</p>
+          <ul class="card-features">
+            <li>Bank statements not required up to 70% LTV</li>
+            <li>Min. 3 months of reserves</li>
+            <li>No tax returns required</li>
+            <li>2-year history with same employer required</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- Asset Utilization -->
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="13" r="9" fill="#500000" opacity="0.08"/>
+                <circle cx="13" cy="13" r="9" stroke="#500000" stroke-width="1.5"/>
+                <path d="M8 13h10M13 8v10" stroke="#500000" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Asset Utilization</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">Min. FICO 620</span>
+            <span class="badge">Up to 80% CLTV</span>
+          </div>
+          <p class="card-tagline">For retirees, investors, and the self-employed with liquid assets</p>
+          <ul class="card-features">
+            <li>Qualifying assets / 60 months</li>
+            <li>Min. 3 months of reserves</li>
+            <li>Loan amounts up to $4 million</li>
+            <li>100% cash/securities, 70% retirement assets</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- Foreign National DSCR -->
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="13" r="9" fill="#500000" opacity="0.08"/>
+                <circle cx="13" cy="13" r="9" stroke="#500000" stroke-width="1.5"/>
+                <ellipse cx="13" cy="13" rx="4" ry="9" stroke="#500000" stroke-width="1" opacity="0.5"/>
+                <line x1="4" y1="13" x2="22" y2="13" stroke="#500000" stroke-width="1" opacity="0.4"/>
+                <line x1="6" y1="9" x2="20" y2="9" stroke="#500000" stroke-width="1" opacity="0.3"/>
+                <line x1="6" y1="17" x2="20" y2="17" stroke="#500000" stroke-width="1" opacity="0.3"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Foreign National DSCR</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">No Score or FICO 660</span>
+            <span class="badge">Up to 75% CLTV</span>
+          </div>
+          <p class="card-tagline">Qualify foreign nationals for investment properties</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $3 million</li>
+            <li>Cash-out allowed</li>
+            <li>DSCR &lt;1 requires min FICO 680</li>
+            <li>Up to 70% CLTV cash-out</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <!-- Foreign National Full Doc -->
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="13" cy="13" r="9" fill="#500000" opacity="0.08"/>
+                <circle cx="13" cy="13" r="9" stroke="#500000" stroke-width="1.5"/>
+                <path d="M7 10c2 1 4 1.5 6 1.5S17 11 19 10M7 16c2-1 4-1.5 6-1.5S17 15 19 16" stroke="#500000" stroke-width="1" opacity="0.5"/>
+                <ellipse cx="13" cy="13" rx="4" ry="9" stroke="#500000" stroke-width="1" opacity="0.3"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Foreign National Full Doc</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">No Score or FICO 660</span>
+            <span class="badge">Up to 75% CLTV</span>
+          </div>
+          <p class="card-tagline">Qualify foreign national borrowers with overseas income</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $3 million</li>
+            <li>Overseas assets allowed</li>
+            <li>RON allowed</li>
+            <li>Cash-out allowed</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== JUMBO ==================== -->
+    <section id="jumbo" class="program-section">
+      <div class="section-header">
+        <h2 class="section-heading">Jumbo</h2>
+        <span class="section-desc">Large loan amounts up to $5 million</span>
+      </div>
+      <div class="section-rule"></div>
+      <div class="program-grid">
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 22l5-9 5 5 5-8 5 12H3z" fill="#500000" opacity="0.12"/>
+                <path d="M3 22l5-9 5 5 5-8 5 12" stroke="#500000" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+                <circle cx="21" cy="7" r="3" fill="#C9A44A"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Jumbo</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">Min. FICO 660</span>
+            <span class="badge">Up to 89.99% CLTV</span>
+          </div>
+          <p class="card-tagline">Large home loans for purchase or investment</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $5 million</li>
+            <li>DTI up to 50%</li>
+            <li>No max cash-out limits</li>
+            <li>Income as per DU/LPA</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONVENTIONAL ==================== -->
+    <section id="conventional" class="program-section">
+      <div class="section-header">
+        <h2 class="section-heading">Conventional</h2>
+        <span class="section-desc">Fannie Mae, Freddie Mac, and standard conforming programs</span>
+      </div>
+      <div class="section-rule"></div>
+      <div class="program-grid">
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 22V13l10-9 10 9v9H3z" fill="#500000" opacity="0.1"/>
+                <path d="M3 22V13l10-9 10 9v9" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <rect x="9" y="16" width="8" height="6" rx="1" fill="#500000" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Conventional Standard</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">FICO per AUS</span>
+            <span class="badge">Up to 97% CLTV</span>
+          </div>
+          <p class="card-tagline">Affordable financing with standard requirements</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $832,750</li>
+            <li>DTI as per AUS</li>
+            <li>Minimum down payment 3%</li>
+            <li>LTV up to 97%</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 22V13l10-9 10 9v9H3z" fill="#500000" opacity="0.1"/>
+                <path d="M3 22V13l10-9 10 9v9" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M9 22v-6h8v6" stroke="#500000" stroke-width="1.3"/>
+                <circle cx="13" cy="10" r="2" fill="#500000" opacity="0.5"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Fannie Mae HomeReady</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">FICO per AUS</span>
+            <span class="badge">Up to 97% CLTV</span>
+          </div>
+          <p class="card-tagline">Perfect for borrowers with limited down payment</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $832,750</li>
+            <li>DTI per AUS</li>
+            <li>Primary residence only</li>
+            <li>Minimum down payment 3%</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 22V13l10-9 10 9v9H3z" fill="#500000" opacity="0.1"/>
+                <path d="M3 22V13l10-9 10 9v9" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8 16h10M10 19h6" stroke="#500000" stroke-width="1.3" stroke-linecap="round" opacity="0.6"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Freddie Mac Home Possible</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">FICO per AUS</span>
+            <span class="badge">Up to 97% CLTV</span>
+          </div>
+          <p class="card-tagline">Affordable option for low-to-moderate income borrowers</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $832,750</li>
+            <li>DTI per AUS</li>
+            <li>Cancelable MI</li>
+            <li>Minimum down payment 3%</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 22V13l10-9 10 9v9H3z" fill="#500000" opacity="0.1"/>
+                <path d="M3 22V13l10-9 10 9v9" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M13 4l10 9" stroke="#C9A44A" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Conventional High Balance</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">FICO per AUS</span>
+            <span class="badge">Up to 97% CLTV</span>
+          </div>
+          <p class="card-tagline">For properties exceeding standard conforming limits</p>
+          <ul class="card-features">
+            <li>Loan limits up to $1,249,125 per county</li>
+            <li>DTI per AUS</li>
+            <li>Primary, secondary, and investment</li>
+            <li>Minimum down payment 3%</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14l4-4 4 3 4-5 4 2" stroke="#500000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 22V14M21 22V14" stroke="#500000" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+                <rect x="5" y="20" width="16" height="2" rx="1" fill="#500000" opacity="0.2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Fannie Mae RefiNow</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">FICO per AUS</span>
+            <span class="badge">Up to 97% CLTV</span>
+          </div>
+          <p class="card-tagline">Flexible refinance with simplified underwriting</p>
+          <ul class="card-features">
+            <li>Reduced documentation required</li>
+            <li>DTI per AUS</li>
+            <li>Owner-occupied, 1-unit primary residence</li>
+            <li>LTV up to 97%</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 14l4-4 4 3 4-5 4 2" stroke="#500000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 22V14M21 22V14" stroke="#500000" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+                <rect x="5" y="20" width="16" height="2" rx="1" fill="#500000" opacity="0.2"/>
+                <circle cx="21" cy="6" r="2" fill="#500000" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Freddie Mac Refi Possible</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">FICO per AUS</span>
+            <span class="badge">Up to 97% CLTV</span>
+          </div>
+          <p class="card-tagline">Flexible refinance with simplified underwriting</p>
+          <ul class="card-features">
+            <li>Reduced documentation required</li>
+            <li>DTI per AUS</li>
+            <li>Owner-occupied, 1-unit primary residence</li>
+            <li>LTV up to 97%</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 22V13l10-9 10 9v9H3z" fill="#500000" opacity="0.1"/>
+                <path d="M3 22V13l10-9 10 9v9" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M10 22v-5h6v5" stroke="#500000" stroke-width="1.3"/>
+                <text x="13" y="12" text-anchor="middle" font-size="5" font-weight="700" fill="#500000" font-family="sans-serif">1</text>
+              </svg>
+            </div>
+            <h3 class="card-title">Freddie Mac HomeOne</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">FICO per AUS</span>
+            <span class="badge">Up to 97% LTV</span>
+          </div>
+          <p class="card-tagline">First-time homeowners with no geo or income limits</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $832,750</li>
+            <li>Minimum down payment 3%</li>
+            <li>Max CLTV 105%; max LTV 97%</li>
+            <li>Primary residence only</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== GOVERNMENT ==================== -->
+    <section id="government" class="program-section">
+      <div class="section-header">
+        <h2 class="section-heading">Government</h2>
+        <span class="section-desc">FHA and VA programs with flexible qualification</span>
+      </div>
+      <div class="section-rule"></div>
+      <div class="program-grid">
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="12" width="20" height="10" rx="1" fill="#500000" opacity="0.1"/>
+                <path d="M3 14L13 4l10 10" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <text x="13" y="21" text-anchor="middle" font-size="5.5" font-weight="700" fill="#500000" font-family="sans-serif">FHA</text>
+              </svg>
+            </div>
+            <h3 class="card-title">FHA Standard</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">Min. FICO 580</span>
+            <span class="badge">Up to 97.75% CLTV</span>
+          </div>
+          <p class="card-tagline">Qualify homebuyers with limited down payment</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $524,225</li>
+            <li>DTI as per AUS</li>
+            <li>LTV up to 97.75%</li>
+            <li>Max LTV 80% for cash-out refinances</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="12" width="20" height="10" rx="1" fill="#500000" opacity="0.1"/>
+                <path d="M3 14L13 4l10 10" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <text x="13" y="21" text-anchor="middle" font-size="5.5" font-weight="700" fill="#500000" font-family="sans-serif">FHA</text>
+                <path d="M19 4l2 2" stroke="#C9A44A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">FHA High Balance</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">Min. FICO 580</span>
+            <span class="badge">Up to 97.75% CLTV</span>
+          </div>
+          <p class="card-tagline">Larger loan amounts in high-cost areas</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $1,209,750</li>
+            <li>DTI as per AUS</li>
+            <li>Primary residence and second home</li>
+            <li>LTV up to 97.75%</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 8l8-4 8 4v6c0 4.4-3.6 7.6-8 8-4.4-.4-8-3.6-8-8V8z" fill="#500000" opacity="0.1"/>
+                <path d="M5 8l8-4 8 4v6c0 4.4-3.6 7.6-8 8-4.4-.4-8-3.6-8-8V8z" stroke="#500000" stroke-width="1.5"/>
+                <text x="13" y="18" text-anchor="middle" font-size="5.5" font-weight="700" fill="#500000" font-family="sans-serif">FHA</text>
+              </svg>
+            </div>
+            <h3 class="card-title">FHA Streamline Refinance</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">Min. FICO 580</span>
+          </div>
+          <p class="card-tagline">Current FHA loan refi with minimal requirements</p>
+          <ul class="card-features">
+            <li>Min. 6 payments on current FHA loan</li>
+            <li>Primary residence</li>
+            <li>No appraisal for stick-built properties</li>
+            <li>No DTI verification required</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 6h10l-2 8H10L8 6z" fill="#500000" opacity="0.1"/>
+                <path d="M8 6h10l-2 8H10L8 6z" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M10 14l-2 6h10l-2-6" stroke="#500000" stroke-width="1.3" stroke-linejoin="round"/>
+                <path d="M9 6L7 4M17 6l2-2" stroke="#500000" stroke-width="1.3" stroke-linecap="round" opacity="0.5"/>
+                <text x="13" y="11" text-anchor="middle" font-size="4.5" font-weight="700" fill="#500000" font-family="sans-serif">VA</text>
+              </svg>
+            </div>
+            <h3 class="card-title">VA Standard</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">Min. FICO 580</span>
+            <span class="badge">Up to 100% CLTV</span>
+          </div>
+          <p class="card-tagline">For veterans, active-duty, and eligible surviving spouses</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $2 million</li>
+            <li>Gift funds allowed</li>
+            <li>No down payment required</li>
+            <li>Manufactured homes eligible</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 6h10l-2 8H10L8 6z" fill="#500000" opacity="0.1"/>
+                <path d="M8 6h10l-2 8H10L8 6z" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M10 14l-2 6h10l-2-6" stroke="#500000" stroke-width="1.3" stroke-linejoin="round"/>
+                <path d="M5 14l4-4 4 3 4-5 4 2" stroke="#C9A44A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+              </svg>
+            </div>
+            <h3 class="card-title">VA IRRRL</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">Min. FICO 580</span>
+            <span class="badge">Up to 110% CLTV</span>
+          </div>
+          <p class="card-tagline">Streamlined refi for veterans and active-duty members</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $1.5 million</li>
+            <li>No appraisal or credit underwriting required</li>
+            <li>Primary, investment, and second home</li>
+            <li>Manufactured homes eligible</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECOND MORTGAGE ==================== -->
+    <section id="second-mortgage" class="program-section">
+      <div class="section-header">
+        <h2 class="section-heading">Second Mortgage</h2>
+        <span class="section-desc">Access existing equity for additional funding</span>
+      </div>
+      <div class="section-rule"></div>
+      <div class="program-grid">
+
+        <div class="program-card">
+          <div class="card-header">
+            <div class="card-icon-wrap">
+              <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 22V13l10-9 10 9v9H3z" fill="#500000" opacity="0.1"/>
+                <path d="M3 22V13l10-9 10 9v9" stroke="#500000" stroke-width="1.5" stroke-linejoin="round"/>
+                <rect x="9" y="14" width="8" height="8" rx="1" fill="#500000" opacity="0.2"/>
+                <path d="M13 14v8" stroke="#500000" stroke-width="1" opacity="0.4"/>
+                <path d="M9 18h8" stroke="#500000" stroke-width="1" opacity="0.4"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Second Mortgage</h3>
+          </div>
+          <div class="card-badges">
+            <span class="badge">No Score for FN or FICO 680</span>
+            <span class="badge">Up to 90% CLTV</span>
+          </div>
+          <p class="card-tagline">Secure additional funding with existing equity</p>
+          <ul class="card-features">
+            <li>Loan amounts up to $500,000</li>
+            <li>DTI up to 50%</li>
+            <li>Owner-occupied, second home, or investment</li>
+            <li>No Score or FICO 680</li>
+          </ul>
+          <a href="https://guaranteemc.com/apply-now/" class="btn-learn">Learn More <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6h7M6.5 3l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHY SECTION -->
+    <div class="why-section">
+      <div class="why-left">
+        <p class="why-eyebrow">Why Guarantee Mortgage</p>
+        <h2 class="why-title">A brokerage built for speed and optionality</h2>
+        <p class="why-body">As a mortgage broker, we're not limited to one lender's programs. We shop 25+ wholesale lenders to find the best rate, lowest fees, and fastest close for every borrower profile — including complex Non-QM scenarios most banks can't touch.</p>
+      </div>
+      <div class="why-right">
+        <div class="why-stat">
+          <div class="why-stat-val">24hr</div>
+          <div class="why-stat-label">Disclosure turnaround</div>
+        </div>
+        <div class="why-stat">
+          <div class="why-stat-val">25+</div>
+          <div class="why-stat-label">Wholesale lenders</div>
+        </div>
+        <div class="why-stat">
+          <div class="why-stat-val">Non-QM</div>
+          <div class="why-stat-label">Specialty programs</div>
+        </div>
+        <div class="why-stat">
+          <div class="why-stat-val">TX</div>
+          <div class="why-stat-label">Licensed in Texas</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROCESS -->
+    <div class="process-section">
+      <h3 class="process-title">Fast turnaround from application to close</h3>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">1</div>
+          <div class="step-label">Application</div>
+          <div class="step-sub">Submit online or call us</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div>
+          <div class="step-label">24hr Disclosure</div>
+          <div class="step-sub">Loan docs issued same day</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div>
+          <div class="step-label">Underwriting</div>
+          <div class="step-sub">Fast UW through wholesale</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">4</div>
+          <div class="step-label">Clear to Close</div>
+          <div class="step-sub">CTC issued, closing scheduled</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">5</div>
+          <div class="step-label">Closing</div>
+          <div class="step-sub">Keys in hand</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA BAND -->
+    <div class="cta-band">
+      <div class="cta-band-text">
+        <h3>Ready to find the right program?</h3>
+        <p>Talk to a loan officer or submit a scenario — we'll match you to the best available product and lender.</p>
+      </div>
+      <div class="cta-band-btns">
+        <a href="mailto:info@guaranteemc.com" class="btn-secondary">Submit a Scenario</a>
+        <a href="https://guaranteemc.com/apply-now/" class="btn-primary">Apply Now</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-legal">
+        <strong>Guarantee Mortgage Company</strong> — NMLS #279696 &nbsp;|&nbsp; College Station &amp; Mont Belvieu, TX &nbsp;|&nbsp; (979) 977-3900<br>
+        Equal Housing Lender. This is not a commitment to lend. Programs subject to change without notice. All loans subject to credit and property approval.
+      </div>
+      <div class="footer-links">
+        <a href="https://guaranteemc.com/privacy-policy/">Privacy Policy</a>
+        <a href="https://guaranteemc.com/terms/">Terms</a>
+        <a href="https://www.nmlsconsumeraccess.org/">NMLS Consumer Access</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tab active state on scroll
+    const sections = document.querySelectorAll('.program-section');
+    const tabLinks = document.querySelectorAll('.tab-link');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          tabLinks.forEach(link => {
+            link.classList.toggle('active', link.dataset.category === id);
+          });
+        }
+      });
+    }, { threshold: 0.3, rootMargin: '-100px 0px -50% 0px' });
+
+    sections.forEach(s => observer.observe(s));
+
+    // Smooth tab click
+    tabLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        tabLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
